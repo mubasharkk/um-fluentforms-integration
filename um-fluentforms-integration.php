@@ -8,12 +8,11 @@
  * Author URI: http://mubasharkk.social-gizmo.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: um-fluentforms-integration
+ * Text Domain: ultimate-member-fluentforms-integration
  * Domain Path: /languages
  * Requires at least: 5.0
- * Tested up to: 6.4
+ * Tested up to: 6.8
  * Requires PHP: 7.4
- * Network: false
  * 
  * @package UMFluentFormsIntegration
  */
@@ -92,8 +91,8 @@ class UMFluentFormsIntegration {
         ?>
         <div class="notice notice-error">
             <p>
-                <strong><?php _e('Ultimate Member - FluentForms Integration', 'um-fluentforms-integration'); ?></strong>
-                <?php _e(' requires Ultimate Member and FluentForms plugins to be installed and activated.', 'um-fluentforms-integration'); ?>
+                <strong><?php _e('Ultimate Member - FluentForms Integration', 'ultimate-member-fluentforms-integration'); ?></strong>
+                <?php _e(' requires Ultimate Member and FluentForms plugins to be installed and activated.', 'ultimate-member-fluentforms-integration'); ?>
             </p>
         </div>
         <?php
@@ -103,7 +102,7 @@ class UMFluentFormsIntegration {
      * Add settings link to plugins page
      */
     public function add_settings_link($links) {
-        $settings_link = '<a href="' . admin_url('admin.php?page=um-fluentforms-integration') . '">' . __('Settings', 'um-fluentforms-integration') . '</a>';
+        $settings_link = '<a href="' . admin_url('admin.php?page=um-fluentforms-integration') . '">' . __('Settings', 'ultimate-member-fluentforms-integration') . '</a>';
         array_unshift($links, $settings_link);
         return $links;
     }
@@ -112,9 +111,6 @@ class UMFluentFormsIntegration {
      * Load plugin components
      */
     public function load_plugin() {
-        // Load text domain
-        load_plugin_textdomain('um-fluentforms-integration', false, dirname(plugin_basename(__FILE__)) . '/languages');
-        
         // Include required files
         $this->includes();
         
