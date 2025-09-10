@@ -1,0 +1,265 @@
+/* Ultimate Member FluentForms Integration Admin Styles */
+
+.umff-admin-container {
+    max-width: 1200px;
+}
+
+.umff-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.umff-section h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.umff-mapping-form {
+    margin-top: 20px;
+}
+
+.umff-field-mapping-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.umff-mapping-header {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.umff-mapping-row {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.umff-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.umff-column:last-child {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.umff-column select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.umff-remove-mapping {
+    background: #dc3232;
+    border-color: #dc3232;
+    color: #fff;
+}
+
+.umff-remove-mapping:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+    color: #fff;
+}
+
+#umff_add_mapping_row {
+    margin-top: 10px;
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+}
+
+#umff_add_mapping_row:hover {
+    background: #005a87;
+    border-color: #005a87;
+    color: #fff;
+}
+
+#umff_field_mapping {
+    margin-top: 10px;
+}
+
+.umff-delete-mapping {
+    background: #dc3232;
+    border-color: #dc3232;
+    color: #fff;
+}
+
+.umff-delete-mapping:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .umff-mapping-header,
+    .umff-mapping-row {
+        flex-direction: column;
+    }
+    
+    .umff-column {
+        padding: 5px 0;
+        width: 100%;
+    }
+    
+    .umff-column:last-child {
+        flex: 1;
+        text-align: left;
+    }
+}
+
+/* Loading states */
+.umff-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Success/Error messages */
+.umff-message {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.umff-message.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.umff-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+/* Table styling for existing mappings */
+.wp-list-table .column-actions {
+    width: 120px;
+}
+
+.wp-list-table tbody tr:hover {
+    background: #f5f5f5;
+}
+
+/* Form elements */
+#umff_field_mapping .form-table th {
+    width: 200px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+#umff_field_mapping .form-table td {
+    vertical-align: top;
+}
+
+/* Button styling */
+.button.umff-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+}
+
+.button.umff-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+    color: #fff;
+}
+
+/* Spacing improvements */
+.umff-section p.description {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+.umff-mapping-form .submit {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Field type indicators */
+.umff-field-type {
+    font-size: 11px;
+    color: #666;
+    font-weight: normal;
+}
+
+.umff-field-custom {
+    color: #0073aa;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.umff-field-builtin {
+    color: #2c5aa0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.umff-field-meta {
+    color: #d63638;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Enhanced select styling */
+.umff-column select {
+    height: 36px;
+    line-height: 1.4;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.07);
+}
+
+.umff-column select:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+/* Improved field mapping container */
+.umff-field-mapping-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Field information tooltip */
+.umff-field-info {
+    display: inline-block;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    background: #666;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: help;
+}
+
+.umff-field-info:hover {
+    background: #0073aa;
+}
