@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Ultimate Member - FluentForms Integration
- * Plugin URI: http://mubasharkk.social-gizmo.com/
+ * Plugin URI: https://github.com/mubasharkk/um-fluentforms-integration/
  * Description: Seamlessly integrates Ultimate Member with FluentForms to automatically submit user data to forms based on configured triggers and field mappings. Supports user registration, profile updates, and status changes with flexible field mapping.
  * Version: 1.2.0
  * Author: Mubashar Khokhar IT Consulting
